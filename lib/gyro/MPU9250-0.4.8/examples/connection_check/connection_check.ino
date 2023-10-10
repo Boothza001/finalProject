@@ -39,7 +39,9 @@ uint8_t readByte(uint8_t address, uint8_t subAddress, WireType& wire = Wire) {
 }
 
 void setup() {
-    Serial.begin(115200);
+            Serial.println("GG");
+            delay(5000);
+    delay(500);
     Serial.flush();
     Wire.begin();
     delay(2000);
@@ -81,4 +83,5 @@ void setup() {
 }
 
 void loop() {
+
 }
